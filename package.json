@@ -21,7 +21,7 @@
 		"@modelcontextprotocol/sdk": "^1.19.1"
 	},
 	"devDependencies": {
-		"@types/node": "22.19.17",
+		"@types/node": "25.5.2",
 		"typescript": "6.0.2"
 	},
 	"author": {
