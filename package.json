@@ -1,0 +1,64 @@
+{
+	"name": "@anyrow/mcp-server",
+	"version": "1.0.0",
+	"description": "AI-native operations platform — extract, store, review, sync. Turn any document, photo, call, email, or website into a row in your table.",
+	"type": "module",
+	"main": "./dist/server.js",
+	"bin": {
+		"anyrow-mcp": "./dist/server.js"
+	},
+	"files": [
+		"dist",
+		"README.md",
+		"LICENSE"
+	],
+	"scripts": {
+		"build": "tsc",
+		"prepublishOnly": "bun run build"
+	},
+	"dependencies": {
+		"@anyrow/sdk-typescript": "*",
+		"@modelcontextprotocol/sdk": "^1.19.1"
+	},
+	"devDependencies": {
+		"@types/node": "22.19.17",
+		"typescript": "6.0.2"
+	},
+	"author": {
+		"name": "Anyrow",
+		"email": "oss@anyrow.ai",
+		"url": "https://anyrow.ai"
+	},
+	"homepage": "https://anyrow.ai",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/anyrow/mcp-server.git"
+	},
+	"bugs": {
+		"url": "https://github.com/anyrow/mcp-server/issues",
+		"email": "oss@anyrow.ai"
+	},
+	"license": "MIT",
+	"keywords": [
+		"anyrow",
+		"operations-platform",
+		"ai-extraction",
+		"document-extraction",
+		"structured-data",
+		"relational-database",
+		"ai-database",
+		"data-sync",
+		"airtable-alternative",
+		"parseur-alternative",
+		"ai-ops",
+		"reny",
+		"mcp",
+		"mcp-server",
+		"model-context-protocol",
+		"claude",
+		"claude-code",
+		"anthropic",
+		"cursor",
+		"windsurf"
+	]
+}
