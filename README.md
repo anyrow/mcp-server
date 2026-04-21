@@ -53,7 +53,7 @@ Tool names prefix with `anyrow_` to stay unique across multi-MCP installs. Strea
 
 ## How it works
 
-Thin wrapper around [`@anyrow/sdk-typescript`](https://github.com/anyrow/sdk-typescript). MCP client spawns `anyrow-mcp` as a subprocess, stdio JSON-RPC handshake (`initialize` → `tools/list` → `tools/call`), SDK handles HTTP, results come back as JSON content blocks.
+Thin wrapper around [`@anyrow/sdk`](https://github.com/anyrow/sdk-typescript). MCP client spawns `anyrow-mcp` as a subprocess, stdio JSON-RPC handshake (`initialize` → `tools/list` → `tools/call`), SDK handles HTTP, results come back as JSON content blocks.
 
 Generated from the Anyrow [OpenAPI spec](https://github.com/anyrow/openapi). Every tool is typed end to end — inputs validated against the spec's JSON Schema, outputs forwarded verbatim to the LLM.
 

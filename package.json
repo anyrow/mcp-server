@@ -17,7 +17,7 @@
 		"prepublishOnly": "bun run build"
 	},
 	"dependencies": {
-		"@anyrow/sdk-typescript": "*",
+		"@anyrow/sdk": "*",
 		"@modelcontextprotocol/sdk": "^1.19.1"
 	},
 	"devDependencies": {
