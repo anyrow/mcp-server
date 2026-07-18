@@ -18,11 +18,11 @@
 	},
 	"dependencies": {
 		"@anyrow/sdk": "*",
-		"@modelcontextprotocol/sdk": "^1.19.1"
+		"@modelcontextprotocol/sdk": "^1.29.0"
 	},
 	"devDependencies": {
-		"@types/node": "25.5.2",
-		"typescript": "6.0.2"
+		"@types/node": "26.1.1",
+		"typescript": "7.0.2"
 	},
 	"author": {
 		"name": "Anyrow",
