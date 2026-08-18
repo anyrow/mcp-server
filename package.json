@@ -1,44 +1,31 @@
 {
-	"name": "@anyrow/mcp-server",
-	"version": "1.0.0",
-	"description": "AI-native operations platform — extract, store, review, sync. Turn any document, photo, call, email, or website into a row in your table.",
-	"type": "module",
-	"main": "./dist/server.js",
+	"author": {
+		"email": "oss@anyrow.ai",
+		"name": "Anyrow",
+		"url": "https://anyrow.ai"
+	},
 	"bin": {
 		"anyrow-mcp": "./dist/server.js"
+	},
+	"bugs": {
+		"email": "oss@anyrow.ai",
+		"url": "https://github.com/anyrow/mcp-server/issues"
+	},
+	"dependencies": {
+		"@anyrow/sdk": "*",
+		"@modelcontextprotocol/sdk": "^1.29.0"
+	},
+	"description": "AI-native operations platform — extract, store, review, sync. Turn any document, photo, call, email, or website into a row in your table.",
+	"devDependencies": {
+		"@types/node": "26.1.1",
+		"typescript": "7.0.2"
 	},
 	"files": [
 		"dist",
 		"README.md",
 		"LICENSE"
 	],
-	"scripts": {
-		"build": "tsc",
-		"prepublishOnly": "bun run build"
-	},
-	"dependencies": {
-		"@anyrow/sdk": "*",
-		"@modelcontextprotocol/sdk": "^1.29.0"
-	},
-	"devDependencies": {
-		"@types/node": "26.1.1",
-		"typescript": "7.0.2"
-	},
-	"author": {
-		"name": "Anyrow",
-		"email": "oss@anyrow.ai",
-		"url": "https://anyrow.ai"
-	},
 	"homepage": "https://anyrow.ai",
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/anyrow/mcp-server.git"
-	},
-	"bugs": {
-		"url": "https://github.com/anyrow/mcp-server/issues",
-		"email": "oss@anyrow.ai"
-	},
-	"license": "MIT",
 	"keywords": [
 		"anyrow",
 		"operations-platform",
@@ -60,5 +47,18 @@
 		"anthropic",
 		"cursor",
 		"windsurf"
-	]
+	],
+	"license": "MIT",
+	"main": "./dist/server.js",
+	"name": "@anyrow/mcp-server",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/anyrow/mcp-server.git"
+	},
+	"scripts": {
+		"build": "tsc",
+		"prepublishOnly": "bun run build"
+	},
+	"type": "module",
+	"version": "1.0.0"
 }
