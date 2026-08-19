@@ -17,7 +17,7 @@
 	},
 	"description": "AI-native operations platform — extract, store, review, sync. Turn any document, photo, call, email, or website into a row in your table.",
 	"devDependencies": {
-		"@types/node": "26.1.1",
+		"@types/node": "26.2.0",
 		"typescript": "7.0.2"
 	},
 	"files": [
