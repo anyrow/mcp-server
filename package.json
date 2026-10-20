@@ -57,7 +57,8 @@
 	},
 	"scripts": {
 		"build": "tsc",
-		"prepublishOnly": "bun run build"
+		"prepublishOnly": "bun run build",
+		"turn": "repo-turn"
 	},
 	"type": "module",
 	"version": "1.0.0"

@@ -5,7 +5,11 @@ import { createMCPServer } from "./_runtime"
 import { buildTools } from "./tools.gen"
 
 const apiKey = process.env["ANYROW_API_KEY"] ?? ""
-const baseURL = process.env["ANYROW_BASE_URL"] ?? "https://api.anyrow.com"
+const baseURL = process.env["ANYROW_BASE_URL"] ?? ""
+if (baseURL.length === 0) {
+	process.stderr.write("ANYROW_BASE_URL is required (the API base URL, e.g. https://api.example.com)\n")
+	process.exit(1)
+}
 
 const sdk = new AnyrowSDK({
 	baseURL,
