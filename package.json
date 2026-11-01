@@ -11,10 +11,6 @@
 		"email": "oss@anyrow.ai",
 		"url": "https://github.com/anyrow/mcp-server/issues"
 	},
-	"dependencies": {
-		"@anyrow/sdk": "*",
-		"@modelcontextprotocol/sdk": "^1.29.0"
-	},
 	"description": "AI-native operations platform — extract, store, review, sync. Turn any document, photo, call, email, or website into a row in your table.",
 	"devDependencies": {
 		"@types/node": "26.6.5",
@@ -22,6 +18,7 @@
 	},
 	"files": [
 		"dist",
+		"src",
 		"README.md",
 		"LICENSE"
 	],
@@ -56,8 +53,6 @@
 		"url": "git+https://github.com/anyrow/mcp-server.git"
 	},
 	"scripts": {
-		"build": "tsc",
-		"prepublishOnly": "bun run build",
 		"turn": "repo-turn",
 		"type:check": "bun check"
 	},
