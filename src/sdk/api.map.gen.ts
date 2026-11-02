@@ -1,4 +1,4 @@
-import type { ServiceMap } from "./api.runtime.gen"
+import { sseOp, type ServiceMap } from "./api.runtime.gen"
 
 export const serviceMap: ServiceMap = {
 	batch: {
@@ -73,6 +73,7 @@ export const serviceMap: ServiceMap = {
 			path: "/v1/projects/{project_id}/extract",
 		},
 		stream: {
+			call: sseOp,
 			method: "POST",
 			params: ["project_id"],
 			path: "/v1/projects/{project_id}/extract-stream",
@@ -85,6 +86,7 @@ export const serviceMap: ServiceMap = {
 				path: "/v1/projects/{project_id}/tables/{table_id}/extract",
 			},
 			stream: {
+				call: sseOp,
 				method: "POST",
 				params: ["project_id", "table_id"],
 				path: "/v1/projects/{project_id}/tables/{table_id}/extract-stream",

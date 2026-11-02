@@ -1,4 +1,4 @@
-"use strict";Object.defineProperty(exports, "__esModule", { value: true });exports.serviceMap = void 0;
+"use strict";Object.defineProperty(exports, "__esModule", { value: true });exports.serviceMap = void 0;var _apiRuntime = require("./api.runtime.gen");
 
 const serviceMap = exports.serviceMap = {
   batch: {
@@ -73,6 +73,7 @@ const serviceMap = exports.serviceMap = {
       path: "/v1/projects/{project_id}/extract"
     },
     stream: {
+      call: _apiRuntime.sseOp,
       method: "POST",
       params: ["project_id"],
       path: "/v1/projects/{project_id}/extract-stream",
@@ -85,6 +86,7 @@ const serviceMap = exports.serviceMap = {
         path: "/v1/projects/{project_id}/tables/{table_id}/extract"
       },
       stream: {
+        call: _apiRuntime.sseOp,
         method: "POST",
         params: ["project_id", "table_id"],
         path: "/v1/projects/{project_id}/tables/{table_id}/extract-stream",
