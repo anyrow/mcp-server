@@ -5,3 +5,5 @@ node_modules
 # here, published all the same — public-sync rsyncs the tree and force-adds it in the mirror.
 dist/
 src/
+# codegen writes this beside src/; tracked alone it points at nothing and fails type:check on a fresh checkout
+tsconfig.json
