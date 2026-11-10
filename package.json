@@ -1,28 +1,7 @@
 {
-	"author": {
-		"email": "oss@anyrow.ai",
-		"name": "Anyrow",
-		"url": "https://anyrow.ai"
-	},
-	"bin": {
-		"anyrow-mcp": "./dist/server.js"
-	},
-	"bugs": {
-		"email": "oss@anyrow.ai",
-		"url": "https://github.com/anyrow/mcp-server/issues"
-	},
-	"description": "AI-native operations platform — extract, store, review, sync. Turn any document, photo, call, email, or website into a row in your table.",
-	"devDependencies": {
-		"@types/node": "26.6.5",
-		"typescript": "7.0.2"
-	},
-	"files": [
-		"dist",
-		"src",
-		"README.md",
-		"LICENSE"
-	],
-	"homepage": "https://anyrow.ai",
+	"name": "@anyrow/mcp-server",
+	"version": "1.0.0",
+	"description": "Official MCP server for Anyrow (anyrow.ai): turn any document, photo, call, email or website into a row in your table.",
 	"keywords": [
 		"anyrow",
 		"operations-platform",
@@ -45,17 +24,23 @@
 		"cursor",
 		"windsurf"
 	],
+	"homepage": "https://anyrow.ai",
+	"bugs": "https://github.com/anyrow/mcp-server/issues",
 	"license": "MIT",
-	"main": "./dist/server.js",
-	"name": "@anyrow/mcp-server",
+	"author": "Anyrow <oss@anyrow.ai>",
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/anyrow/mcp-server.git"
 	},
-	"scripts": {
-		"turn": "repo-turn",
-		"type:check": "bun check"
-	},
 	"type": "module",
-	"version": "1.0.0"
+	"bin": {
+		"anyrow-mcp": "dist/server.js"
+	},
+	"files": [
+		"dist",
+		"src"
+	],
+	"engines": {
+		"node": ">=22"
+	}
 }

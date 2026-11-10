@@ -16,10 +16,10 @@
 // --no-auth, which --expose refuses. The token is never sent to the API. A browser Origin other than the server's own is
 // refused unless listed in $ANYROW_MCP_ORIGINS (comma-separated); a body is read at most
 // $ANYROW_MAX_BODY_BYTES, 4 MiB by default. A file argument over HTTP is inline: no path is read.
-import { BYTES_MAX, bindTools, configHeaders, createProtocol, fileReader, filesCapability, listenHttp, serveHttp, serveStdio } from "./mcp.runtime"
-import { Api } from "./sdk/api.index.gen"
-import { headerValue } from "./sdk/api.runtime.gen"
-import { toolSpecs } from "./tools.gen"
+import { BYTES_MAX, bindTools, configHeaders, createProtocol, fileReader, filesCapability, listenHttp, serveHttp, serveStdio } from "./mcp.runtime.js"
+import { Api } from "./sdk/api.index.gen.js"
+import { headerValue } from "./sdk/api.runtime.gen.js"
+import { toolSpecs } from "./tools.gen.js"
 
 const refuse = (message: string): never => {
 	process.stderr.write(message + "\n")
@@ -60,7 +60,7 @@ if (!/^[1-9][0-9]{0,9}$/.test(timeout) || Number(timeout) > 2147483647) {
 	process.stderr.write("Invalid $ANYROW_TIMEOUT_MS: a whole number of milliseconds, 1 to 2147483647\n")
 	process.exit(1)
 }
-const baseURL = process.env["ANYROW_BASE_URL"] || "/api"
+const baseURL = process.env["ANYROW_BASE_URL"] || "https://api.anyrow.ai/api"
 if (baseURL === "") {
 	process.stderr.write("No API to call: set $ANYROW_BASE_URL, since the API names no server\n")
 	process.exit(1)

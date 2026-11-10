@@ -1,10 +1,10 @@
-import { SDKClient, schemeAuth } from "./api.runtime.gen"
-import { serviceMap } from "./api.map.gen"
-import type { ApiConfig, ApiOperations, ApiSafe } from "./api.types.gen"
+import { SDKClient, schemeAuth } from "./api.runtime.gen.js"
+import { serviceMap } from "./api.map.gen.js"
+import type { ApiConfig, ApiOperations, ApiSafe } from "./api.types.gen.js"
 
 export class Api extends SDKClient {
 	constructor(config: ApiConfig) {
-		super(serviceMap, schemeAuth({ ...config, baseURL: config.baseURL ?? "/api" }, "Authorization", "ApiKey "))
+		super(serviceMap, schemeAuth({ ...config, baseURL: config.baseURL ?? "https://api.anyrow.ai/api" }, "Authorization", "ApiKey "))
 	}
 }
 
